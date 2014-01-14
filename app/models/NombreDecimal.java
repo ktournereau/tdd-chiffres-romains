@@ -13,12 +13,15 @@ public class NombreDecimal {
     }
 
     public String en_romain() {
-    	if(this.valeur == 1) return "I";
-    	if(this.valeur == 2) return "II";
-    	if(this.valeur == 3) return "III";
-    	
-    	if(this.valeur == 4) return "IV";
 
-    	return "";
+    	ArrayList<String> convertTab = new ArrayList<String>();
+
+    	convertTab.add(0,"");
+    	convertTab.add(1,"I");
+    	convertTab.add(2,"II");
+    	convertTab.add(3,"III");
+    	convertTab.add(4,"IV");
+
+    	return convertTab.get(this.valeur);
     }
 }
