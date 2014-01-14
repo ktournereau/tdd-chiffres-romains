@@ -14,22 +14,19 @@ public class NombreDecimal {
 
     public String en_romain() {
 
-    	ArrayList<String> convert = new ArrayList<String>();
+    	ArrayList<String> convertTab = new ArrayList<String>();
 
-    	convert.add(0,"");
-    	convert.add(1,"I");
-    	convert.add(2,"II");
-    	convert.add(3,"III");
-    	convert.add(4,"IV");
+    	convertTab.add(0,"");
+    	convertTab.add(1,"I");
+    	convertTab.add(2,"II");
+    	convertTab.add(3,"III");
 
-    	return convert.get(this.valeur);
+    	convertTab.add(4,"IV");
 
-/*
-		if(this.valeur==1){	return "I";}
-		else if(this.valeur ==2){ return "II";}
-		else if(this.valeur == 3){ return "III";}
-		else if(this.valeur == 4){ return "IV";}
-		else{ return "";}
-*/
+    	convertTab.add(5,"V");
+
+    	convertTab.add(6,"VI");
+
+    	return convertTab.get(this.valeur);
     }
 }
