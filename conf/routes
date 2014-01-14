@@ -6,11 +6,11 @@
 GET     /                           controllers.Application.index()
 
 # Convertisseur de nombre décimal en nombre romain
-GET	/romain			    controllers.ConvEnRomain.blank()
+GET		/romain			    controllers.ConvEnRomain.blank()
 POST	/romain			    controllers.ConvEnRomain.submit()
 
 # Convertisseur de nombre romain en nombre décimal
-GET	/decimal		    controllers.ConvEnDecimal.blank()
+GET		/decimal		    controllers.ConvEnDecimal.blank()
 POST	/decimal		    controllers.ConvEnDecimal.submit()
 
 # Map static resources from the /public folder to the /assets URL path
