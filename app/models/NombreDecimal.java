@@ -24,7 +24,9 @@ public class NombreDecimal {
     	convertTab.add(4,"IV");
 
     	convertTab.add(5,"V");
-    	
+
+    	convertTab.add(6,"VI");
+
     	return convertTab.get(this.valeur);
     }
 }
