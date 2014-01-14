@@ -20,8 +20,11 @@ public class NombreDecimal {
     	convertTab.add(1,"I");
     	convertTab.add(2,"II");
     	convertTab.add(3,"III");
+
     	convertTab.add(4,"IV");
 
+    	convertTab.add(5,"V");
+    	
     	return convertTab.get(this.valeur);
     }
 }
