@@ -13,6 +13,7 @@ public class NombreDecimal {
     }
 
     public String en_romain() {
-	return "";
+    	if(this.valeur == 1) return "I";
+    	else return "";
     }
 }
