@@ -114,4 +114,17 @@ public class ApplicationTest {
 		assert_en_decimal("LXXX",80);
 		assert_en_decimal("XC",90);
     }
+
+    @Test
+    public void decimal_centaines() {
+		assert_en_decimal("C",100);
+		assert_en_decimal("CC",200);
+		assert_en_decimal("CCC",300);
+		assert_en_decimal("CD",400);
+		assert_en_decimal("D",500);
+		assert_en_decimal("DC",600);
+		assert_en_decimal("DCC",700);
+		assert_en_decimal("DCCC",800);
+		assert_en_decimal("CM",900);
+    }
 }
