@@ -34,6 +34,16 @@ public class NombreRomain {
 		if(this.valeur == "LXXX") return 80;	
 		if(this.valeur == "XC") return 90;
 
+		if(this.valeur == "C") return 100;
+		if(this.valeur == "CC") return 200;
+		if(this.valeur == "CCC") return 300;
+		if(this.valeur == "CD") return 400;
+		if(this.valeur == "D") return 500;
+		if(this.valeur == "DC") return 600;
+		if(this.valeur == "DCC") return 700;
+		if(this.valeur == "DCCC") return 800;	
+		if(this.valeur == "CM") return 900;
+
 		return 0;	
 	}
 
