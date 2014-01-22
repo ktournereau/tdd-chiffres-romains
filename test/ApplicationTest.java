@@ -101,4 +101,17 @@ public class ApplicationTest {
 		assert_en_decimal("VIII",8);
 		assert_en_decimal("IX",9);
     }
+
+    @Test
+    public void decimal_dizaines() {
+		assert_en_decimal("X",10);
+		assert_en_decimal("XX",20);
+		assert_en_decimal("XXX",30);
+		assert_en_decimal("XL",40);
+		assert_en_decimal("L",50);
+		assert_en_decimal("LX",60);
+		assert_en_decimal("LXX",70);
+		assert_en_decimal("LXXX",80);
+		assert_en_decimal("XC",90);
+    }
 }
