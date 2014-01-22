@@ -30,7 +30,10 @@ import models.NombreRomain;
 public class ApplicationTest {
 
     void assert_en_romain(int d, String r) {
-	assertThat(new NombreDecimal(d).en_romain()).isEqualTo(r);
+		assertThat(new NombreDecimal(d).en_romain()).isEqualTo(r);
+    }
+    void assert_en_decimal(String r, int d) {
+		assertThat(new NombreRomain(r).en_decimal()).isEqualTo(d);
     }
 
     @Test
@@ -81,5 +84,21 @@ public class ApplicationTest {
 
 		assert_en_romain(2014,"MMXIV");
 		assert_en_romain(3999,"MMMCMXCIX");
+    }
+
+    ////////////////////////////////
+
+    @Test
+    public void decimal_unites() {
+		assert_en_decimal("",0);
+		assert_en_decimal("I",1);
+		assert_en_decimal("II",2);
+		assert_en_decimal("III",3);
+		assert_en_decimal("IV",4);
+		assert_en_decimal("V",5);
+		assert_en_decimal("VI",6);
+		assert_en_decimal("VII",7);
+		assert_en_decimal("VIII",8);
+		assert_en_decimal("IX",9);
     }
 }
